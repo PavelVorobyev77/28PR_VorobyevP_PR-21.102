@@ -68,16 +68,17 @@
 
     <ImageView
         android:id="@+id/jiga"
-        android:layout_width="561dp"
-        android:layout_height="415dp"
+        android:layout_width="481dp"
+        android:layout_height="192dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="280dp"
         android:contentDescription="@string/clock"
         android:padding="10dp"
-        android:src="@drawable/jiga"
+        android:src="@drawable/jig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sun"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-75dp" />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

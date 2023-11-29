@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">28PR_VorobyevP_PR-21.102</string>
+    <string name="sun">Солнце</string>
+    <string name="grass">Трава</string>
+    <string name="sky">Небо</string>
+    <string name="clock">Часы</string>
+    <string name="hour">Стрелка</string>
+</resources>

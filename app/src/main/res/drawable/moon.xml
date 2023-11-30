@@ -5,10 +5,10 @@
     android:shape="oval" >
 
     <gradient
-        android:endColor="#FF8C00"
+        android:endColor="#E0FFFF"
         android:gradientRadius="150"
-        android:startColor="#ffffcc00"
-        android:type="radial"
+        android:startColor="#2F4F4F"
+        android:type="linear"
         android:useLevel="false" />
 
     <size

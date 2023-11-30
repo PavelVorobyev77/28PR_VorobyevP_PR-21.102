@@ -32,6 +32,20 @@
         app:layout_constraintVertical_bias="0.222" />
 
     <ImageView
+        android:id="@+id/moon"
+        android:layout_width="221dp"
+        android:layout_height="209dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/moon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/moon"
+        app:layout_constraintBottom_toTopOf="@+id/grass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <ImageView
         android:id="@+id/grass"
         android:layout_width="412dp"
         android:layout_height="172dp"
@@ -58,13 +72,13 @@
         android:id="@+id/hour_hand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:contentDescription="@string/clock"
         android:padding="10dp"
         android:src="@drawable/hour_hand"
         app:layout_constraintBottom_toTopOf="@+id/grass"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/jiga"
@@ -80,5 +94,65 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sun"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/star2"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="152dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toTopOf="@+id/grass"
+        app:layout_constraintEnd_toStartOf="@+id/sun"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sky" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toEndOf="@+id/star1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toEndOf="@+id/star1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toEndOf="@+id/star1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

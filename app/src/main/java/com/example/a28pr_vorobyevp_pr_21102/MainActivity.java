@@ -13,7 +13,28 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // Получим ссылку на звезды
+        ImageView star1 = findViewById(R.id.star1);
+        Animation animation1 = AnimationUtils.loadAnimation(this, R.anim.stars);
+        star1.startAnimation(animation1);
+        ImageView star2 = findViewById(R.id.star2);
+        Animation animation2 = AnimationUtils.loadAnimation(this, R.anim.stars);
+        star2.startAnimation(animation2);
+        ImageView star3= findViewById(R.id.star3);
+        Animation animation3 = AnimationUtils.loadAnimation(this, R.anim.stars);
+        star3.startAnimation(animation3);
+        ImageView star4 = findViewById(R.id.star4);
+        Animation animation4 = AnimationUtils.loadAnimation(this, R.anim.stars);
+        star4.startAnimation(animation4);
+        ImageView star5 = findViewById(R.id.star5);
+        Animation animation5 = AnimationUtils.loadAnimation(this, R.anim.stars);
+        star5.startAnimation(animation5);
+        // Получим ссылку на луну
+        ImageView moonImageView = findViewById(R.id.moon);
+        // Анимация для луны
+        Animation moonsetAnimation = AnimationUtils.loadAnimation(this, R.anim.moon_set);
+        // Подключаем анимацию к нужному View
+        moonImageView.startAnimation(moonsetAnimation);
         // Получим ссылку на солнце
         ImageView sunImageView = findViewById(R.id.sun);
         // Анимация для восхода солнца
